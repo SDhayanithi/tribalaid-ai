@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/tribalaid-ai/" />
+    <title>TribalAid AI</title>
+    <script>
+      // If direct deep link, redirect to hash route
+      var pathname = window.location.pathname;
+      var repo = '/tribalaid-ai/';
+      if (pathname.startsWith(repo)) {
+        var subpath = pathname.substring(repo.length);
+        if (subpath && !subpath.startsWith('#')) {
+          window.location.replace(repo + '#/' + subpath + window.location.search);
+        } else {
+          window.location.replace(repo);
+        }
+      } else {
+        window.location.replace(repo);
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/tribalaid-ai/">TribalAid AI</a>...</p>
+  </body>
+</html>

@@ -45,7 +45,7 @@ export const LandingPage: React.FC = () => {
         <div
           className="absolute inset-0 bg-cover bg-center md:bg-[center_top] bg-no-repeat transform scale-100 transition-transform duration-1000"
           style={{
-            backgroundImage: `url('/assets/tribal-aid-landing-bg.png')`,
+            backgroundImage: `url('${import.meta.env.BASE_URL}assets/tribal-aid-landing-bg.png')`,
           }}
         />
 
@@ -71,7 +71,7 @@ export const LandingPage: React.FC = () => {
             >
               <div className="w-12 h-12 rounded-xl bg-white p-1 shadow-md border border-white/30 flex items-center justify-center shrink-0 overflow-hidden group-hover:scale-105 transition-transform">
                 <img
-                  src="/assets/tribalaid-logo.png"
+                  src={`${import.meta.env.BASE_URL}assets/tribalaid-logo.png`}
                   alt="TribalAid AI Official Emblem"
                   className="w-full h-full object-contain"
                 />
@@ -1009,7 +1009,7 @@ export const LandingPage: React.FC = () => {
               <div className="flex items-center gap-3.5">
                 <div className="w-14 h-14 rounded-2xl bg-white p-1.5 shadow-md border border-white/20 flex items-center justify-center shrink-0 overflow-hidden">
                   <img
-                    src="/assets/tribalaid-logo.png"
+                    src={`${import.meta.env.BASE_URL}assets/tribalaid-logo.png`}
                     alt="TribalAid AI Logo"
                     className="w-full h-full object-contain"
                   />

@@ -99,7 +99,7 @@ export const PortalSelectPage: React.FC = () => {
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
             <div className="w-10 h-10 rounded-xl bg-white p-0.5 shadow-sm border border-white/20 flex items-center justify-center shrink-0 overflow-hidden">
               <img
-                src="/assets/tribalaid-logo.png"
+                src={`${import.meta.env.BASE_URL}assets/tribalaid-logo.png`}
                 alt="TribalAid AI"
                 className="w-full h-full object-contain"
               />

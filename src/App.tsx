@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './context/AuthContext';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
 import { TribalAidProvider } from './context/TribalAidContext';
 import { AppLayout } from './components/layout/AppLayout';
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
@@ -33,7 +33,7 @@ export function App() {
   return (
     <AuthProvider>
       <TribalAidProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             {/* Public Root Landing Page */}
             <Route path="/" element={<LandingPage />} />
@@ -182,7 +182,7 @@ export function App() {
               <Route path="*" element={<NotFoundPage />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </TribalAidProvider>
     </AuthProvider>
   );

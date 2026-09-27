@@ -125,7 +125,7 @@ export const RoleLoginPage: React.FC = () => {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105"
-          style={{ backgroundImage: `url('/assets/tribal_students_education.jpg')` }}
+          style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/tribal_students_education.jpg')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-900/40" />
 
@@ -134,7 +134,7 @@ export const RoleLoginPage: React.FC = () => {
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/portal-selection')}>
             <div className="w-12 h-12 rounded-2xl bg-white p-1 shadow-lg border border-white/30 flex items-center justify-center shrink-0 overflow-hidden">
               <img
-                src="/assets/tribalaid-logo.png"
+                src={`${import.meta.env.BASE_URL}assets/tribalaid-logo.png`}
                 alt="TribalAid AI"
                 className="w-full h-full object-contain"
               />
